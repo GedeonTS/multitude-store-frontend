@@ -9,7 +9,7 @@ function Navbar() {
       <div className="logo-area">
         <img src={Menu} alt="menu" className="menu-icon" />
         <div className="logo-wrapper">
-          <div className="logo-inner"></div> La Barbichette
+          <div className="logo-inner"></div> Multitude
         </div>
       </div>
 
