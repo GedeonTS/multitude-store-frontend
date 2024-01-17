@@ -1,9 +1,44 @@
-
-    @import '../../variables';
-
+@import "../../variables";
 
 .Navbar {
-    background-color: $globalColor0;
+  background-color: $globalColor0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 
-    
+  .logo-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .menu-icon {
+    width: 50px;
+  }
+
+  .logo-wrapper {
+    width: 150px;
+    display: flex;
+    border: solid;
+  }
+
+  .logo-inner {
+    width: 30px;
+    height: 30px;
+    border:solid 2px $globalColor5;
+  }
+
+  .basket-icon {
+    width: 30px;
+    height: 30px;
+    p {
+      color: $globalColor5;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
 }
