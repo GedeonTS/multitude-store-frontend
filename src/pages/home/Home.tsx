@@ -1,10 +1,11 @@
 import './Home.scss';
+import Headline from '../../components/Headline/Headline';
 
 function Home() {
   return (
-    <div>
-      TEST
-    </div>
+    <section className='home-section'>
+     <Headline/>
+    </section>
   )
 }
 
