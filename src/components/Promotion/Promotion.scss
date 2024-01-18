@@ -1,0 +1,62 @@
+@import "../../variables";
+
+.promotion-section {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $globalColor3;
+    font-family: "Poppins", sans-serif;
+
+    .promotion-section-inner {
+        width: 320px;
+        height: 250px;
+        background-color: $globalColor5;
+        padding: 20px;
+        margin-top: 100px;
+        .short-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: $globalColor3;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            filter: invert(100%);
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: bold;
+            color: $globalColor3;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+            margin-bottom: 10px;
+            color: $globalColor5;
+        }
+    }
+}
