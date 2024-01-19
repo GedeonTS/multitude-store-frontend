@@ -1,0 +1,121 @@
+@import "../../variables.scss";
+.footer {
+  width: 100%;
+  margin-top: 40px;
+
+  .contact-container {
+    width: 100%;
+    border-top: solid 1px $globalColor6;
+    font-family: "Poppins", "sans-serif";
+
+    .form {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: solid 1px $globalColor6;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .input-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+          width: 80%;
+          height: 40px;
+          min-width: 300px;
+          border: 1px solid $globalColor3;
+          padding: 0;
+          margin-bottom: 10px;
+        }
+
+        .btn {
+          width: 80%;
+          min-width: 300px;
+          height: 40px;
+          background-color: $globalColor2;
+          color: $globalColor5;
+          border: none;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .contact-area {
+      background-color: $globalColor5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .logo-wrapper {
+        margin-top: 40px;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        color: $globalColor3;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .logo-inner {
+        width: 10px;
+        height: 10px;
+        border: solid 5px greenyellow;
+        border-bottom-right-radius: 10px;
+      }
+
+      p {
+        font-family: 'Monsterat';
+        color: $globalColor1;
+      }
+    }
+  }
+
+  .Footer-area {
+    font-family: 'Monsterat', 'sans-serif';
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: $globalColor3;
+    color: $globalColor7;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        li {
+            img {
+                width: 20px;
+            }
+        }
+    }
+  }
+}
