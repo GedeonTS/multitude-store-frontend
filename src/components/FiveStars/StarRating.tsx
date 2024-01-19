@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdStar } from "react-icons/io";
 
 const StarRating = () => {
-  const [rating, setRating] = useState(null);
+  const [rating, setRating] = useState(4);
   const [hover, setHover] = useState(null);
 
   return (
