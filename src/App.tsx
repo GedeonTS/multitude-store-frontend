@@ -1,15 +1,28 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Navbar from './components/Navbar/Navbar';
 import './App.scss';
+import Footer from './components/Footer/Footer';
+import Description from './pages/description/Description';
+import Category from './pages/Category/Category';
+import Cart from './pages/Cart/Cart';
 
 
 function App() {
 
   return (
+    <BrowserRouter>
     <div className='App'>
       <Navbar />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:category" element={<Category />} />
+        <Route path="/:itemId" element={<Description />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      <Footer />
     </div>
+    </BrowserRouter>
   )
 }
 
