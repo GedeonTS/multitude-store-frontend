@@ -1,0 +1,53 @@
+@import "../../variables.scss";
+.comments-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  .container {
+    width: 80%;
+    .comments-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      .comment-item {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        background-color: $globalColor5;
+
+        .comment {
+          font-size: 13px;
+          margin-left: 20px;
+        }
+        .stars {
+          height: 10px;
+          margin: 0;
+          padding: 0;
+          width: 100px;
+          margin-left: 20px;
+        }
+        .comment-author {
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border: solid 1px #dce3e5;
+            margin-right: 20px;
+            border-radius: 25px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
