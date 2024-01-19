@@ -20,7 +20,7 @@ function Promotion() {
       };
   return (
     <section className="promotion-section">
-        <div className="promotion-section-inner" style={divStyle1}>
+        <div className="promotion-section-inner promotion-section-inner_first" style={divStyle1}>
             <h2>The only Case you need.</h2>
             <a href="#" className="btn">
           Shop Now
