@@ -1,5 +1,5 @@
 import "./Description.scss";
-import { useHistory, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import Products from "../../components/Products/Products";
 
@@ -74,14 +74,14 @@ const Description = () => {
           >
             Ajouter au panier
           </button>)
-            : (<button
-            onClick={() => {
-                // history.push('/new-page');
-            }
-            }
-                className="btn panier"
+            : (<button 
+            
+            className="btn panier"
+            ><Link
+            to="/cart"
             >
                 voir le panier
+            </Link>
             </button>)
 
             
