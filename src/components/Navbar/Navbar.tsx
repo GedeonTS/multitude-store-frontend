@@ -40,7 +40,6 @@ function Navbar() {
                   <div className="logo-inner"></div> Multitude
                 </div>
               </div>
-
               <div className="action-menu">
                 <Link to="/login" className="login">
                 Sign in
