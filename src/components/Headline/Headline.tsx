@@ -2,7 +2,7 @@ import "./Headline.scss";
 import icon from "./../../assets/icons/basket.svg";
 import delivery from "../../assets/delivery-svgrepo-com.svg";
 import undo from "../../assets/undo-svgrepo-com.svg";
-import payment  from "../../assets/payment-svgrepo-com.svg";
+import payment from "../../assets/payment-svgrepo-com.svg";
 import message from "../../assets/message-circle-dots-svgrepo-com.svg";
 
 function Headline() {
@@ -25,22 +25,22 @@ function Headline() {
       </div>
       <div className="headline-footer">
         <div className="headline-footer-item">
-            <img src={delivery} />
+          <img src={delivery} />
           <h2>Free Shipping</h2>
           <p>On all orders over $99</p>
         </div>
         <div className="headline-footer-item">
-        <img src={undo} />
+          <img src={undo} />
           <h2>30 Days Return</h2>
           <p>Money back guarantee</p>
         </div>
         <div className="headline-footer-item">
-        <img src={message} />
+          <img src={message} />
           <h2>24/7 Support</h2>
           <p>Call us anytime</p>
         </div>
         <div className="headline-footer-item">
-        <img src={payment} />
+          <img src={payment} />
           <h2>100% Payment Secure</h2>
           <p>We ensure secure payment</p>
         </div>
