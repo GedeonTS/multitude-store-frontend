@@ -77,7 +77,6 @@
   }
   .headline-footer {
     width: 90%;
-    // padding: 5%;
     border: solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,9 +86,9 @@
     border: solid 1px #dce3e5;
     align-content: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: 908px) {
       margin-top: -50px;
-      width: 80%;
+      width: 70%;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       z-index: 10;
     }
@@ -98,6 +97,7 @@
       margin-bottom: 10px;
       height: 100px;
       display: flex;
+      min-width: 160px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -116,7 +116,6 @@
         font-size: 13px;
         color: $globalColor3;
       }
-      
     }
   }
 }
