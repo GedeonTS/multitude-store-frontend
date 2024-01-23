@@ -3,6 +3,7 @@ import StarRating from "../FiveStars/StarRating";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import basket from "../../assets/icons/basket.svg";
+import { useState } from "react";
 
 export const Stars = styled.div`
   display: flex;
@@ -19,6 +20,7 @@ export const Stars = styled.div`
 `;
 
 function Products({ category }) {
+    const [isHovered, setIsHovered] = useState(null);
   const ProductsData: {
     data: {
       id: number;
@@ -58,7 +60,7 @@ function Products({ category }) {
           "https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg",
       },
       {
-        id: 3,
+        id: 4,
         name: "Product 3",
         description: "This is an american product, manufactured in LA",
         price: 300,
@@ -66,6 +68,42 @@ function Products({ category }) {
         image:
           "https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg",
       },
+{
+      id: 5,
+      name: "Product 1",
+      description: "This is an american product, manufactured in LA",
+      price: 1087,
+      category: "audio-video",
+      image:
+        "https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg",
+    },
+    {
+      id: 6,
+      name: "Product 2",
+      description: "This is an american product, manufactured in LA",
+      price: 209,
+      category: "audio-video",
+      image:
+        "https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg",
+    },
+    {
+      id: 7,
+      name: "Product 3",
+      description: "This is an american product, manufactured in LA",
+      price: 870,
+      category: "audio-video",
+      image:
+        "https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg",
+    },
+    {
+      id: 8,
+      name: "Product 3",
+      description: "This is an american product, manufactured in LA",
+      price: 390,
+      category: "audio-video",
+      image:
+        "https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg",
+    }
     ],
   };
 
@@ -80,16 +118,20 @@ function Products({ category }) {
           <div className="products-section-inner">
             {ProductsData.data.map((product) => (
               <Link
+              key={product.id}
                 to={`/${encodeURIComponent(product.name)}`}
                 className="product-link"
               >
                 <div className="product-item" key={product.id}>
                   <div className="product-item-inner">
                     <div className="item-image-section">
-                      <div className="item-hollow-cover">
-                        <img src={basket} alt="basket" className="hollow-basket"/>
+                      <div 
+                       onMouseEnter={() => setIsHovered(product.id)}
+                       onMouseLeave={() => setIsHovered(null)}
+                      className={`${isHovered==product.id?'item-hollow-cover  hovered':'item-hollow-cover'}`}>
+                       {isHovered==product.id? <img src={basket} alt="basket" className="hollow-basket"/>:""}
                       </div>
-                      <img src={product.image} alt={product.name} />
+                    <img src={product.image} alt={product.name} />
                     </div>
                     <div className="product-item-info">
                       <Stars className="stars">
