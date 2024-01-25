@@ -80,7 +80,7 @@ const Description = () => {
             ><Link
             to="/cart"
             >
-                voir le panier
+                Voir le panier
             </Link>
             </button>)
 
