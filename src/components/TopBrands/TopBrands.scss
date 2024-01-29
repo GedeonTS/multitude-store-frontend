@@ -10,6 +10,9 @@
         .top-brand-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @media (min-width: 768px){
+        grid-template-columns: 1fr 1fr  1fr;
+        }
 
         .top-brand-item {
             border: solid 1px #dce3e5;
