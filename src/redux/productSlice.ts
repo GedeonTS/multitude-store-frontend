@@ -12,11 +12,15 @@ export interface Product {
 }
 
 export interface ProductState {
-    products: Product[];
+    products: {
+        status: number,
+        products:Product[]};
 }
 
 const initialState: ProductState = {
-    products: [],
+    products: {
+        status: 0,
+        products:[]},
 };
 export const fetchProduct= createAsyncThunk("product/fetch", async (thunkAPI)=>{
     const response=await fetch("http://127.0.0.1:8000/api/products/",{
