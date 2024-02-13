@@ -43,6 +43,7 @@ const AddItemForm: React.FC = () => {
   };
 
   return (
+    <div className="add-item-form-container">
     <form onSubmit={handleSubmit} className="add-item-form">
       <label>
         Name:
@@ -64,33 +65,17 @@ const AddItemForm: React.FC = () => {
         <input type="text" name="category" value={formData.category} onChange={handleChange} required />
       </label>
 
-      <label>
-        Image 1:
-        <input type="url" name="image1" value={formData.image1} onChange={handleChange} required />
-      </label>
+      <div className="App">
+            <h2>Add Image:</h2>
+            <input type="file" onChange={handleChange} />
+            <img src={file} />
+      </div>
 
-      <label>
-        Image 2:
-        <input type="url" name="image2" value={formData.image2} onChange={handleChange} required />
-      </label>
 
-      <label>
-        Image 3:
-        <input type="url" name="image3" value={formData.image3} onChange={handleChange} required />
-      </label>
-
-      <label>
-        Image 4:
-        <input type="url" name="image4" value={formData.image4} onChange={handleChange} required />
-      </label>
-
-      <label>
-        Image 5:
-        <input type="url" name="image5" value={formData.image5} onChange={handleChange} required />
-      </label>
 
       <button type="submit">Add Item</button>
     </form>
+    </div>
   );
 };
 
