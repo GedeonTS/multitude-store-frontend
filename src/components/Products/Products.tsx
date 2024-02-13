@@ -19,7 +19,7 @@ export const Stars = styled.div`
   }
 `;
 
-function Products({ category }) {
+function Products({ category, list }) {
     const [isHovered, setIsHovered] = useState(null);
   const ProductsData: {
     data: {
