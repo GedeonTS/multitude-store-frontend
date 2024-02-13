@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Description from './pages/description/Description';
 import Category from './pages/Category/Category';
 import Cart from './pages/Cart/Cart';
+import AddItemForm from './components/NewItem/AddItemForm';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/category/:category" element={<Category />} />
         <Route path="/:itemId" element={<Description />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/add-item" element={<AddItemForm />} />
       </Routes>
       <Footer />
     </div>
