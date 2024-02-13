@@ -228,6 +228,9 @@
         @media (max-width: 768px) {
           display: none;
         }
+        .action-menu {
+          display: flex;
+        .add-item-icon,
         .order-icon {
           width: 30px;
           height: 54px;
@@ -256,7 +259,7 @@
             font-size: 12px;
             background-color: #fff;
           }
-        }
+        }}
         .mobile {
           @media (min-width: 768px) {
             display: none;

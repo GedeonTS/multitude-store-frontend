@@ -1,8 +1,7 @@
 import "./Navbar.scss";
 import Basket from "./../../assets/icons/basket.svg";
-import Cancel from "./../../assets/icons/cancel.svg";
 import Menu from "./../../assets/icons/menu.svg";
-import arrowDown from "../../assets/arrow-down.svg";
+import plusIcon from "./../../assets/icons/plus-circle.svg";
 import search from "../../assets/search.svg";
 import { Link } from "react-router-dom";
 function Navbar() {
@@ -73,9 +72,14 @@ function Navbar() {
                 <li>{category}</li>
               ))}
             </ul>
+            <div className="action-menu">
             <div className="order-icon desktop">
               <img src={Basket} alt="basket" className="basket-icon" />
               <p>0</p>
+            </div>
+            <Link to="/add-item" className="add-item">
+            <img src={plusIcon} alt="add item icon" className="add-item-icon" />
+            </Link>
             </div>
           </div>
         </div>
