@@ -1,5 +1,8 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import './AddItemForm.scss'
+import './AddItemForm.scss';
+import  imagePlaceHolder from '../../assets/addImage.png';
+
+
 
 interface FormData {
   id: number;
@@ -68,7 +71,7 @@ const AddItemForm: React.FC = () => {
       <div className="App">
             <h2>Add Image:</h2>
             <input type="file" onChange={handleChange} />
-            <img src={file} />
+            <img src={imagePlaceHolder} />
       </div>
 
 
@@ -80,3 +83,4 @@ const AddItemForm: React.FC = () => {
 };
 
 export default AddItemForm;
+
