@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './AddItemForm.scss';
 import  imagePlaceHolder from '../../assets/addImage.png';
+import axios from 'axios';
 
 
 
@@ -30,6 +31,7 @@ const AddItemForm: React.FC = () => {
     image4: '',
     image5: '',
   });
+
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
