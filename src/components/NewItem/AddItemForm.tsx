@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './AddItemForm.scss';
 import  imagePlaceHolder from '../../assets/addImage.png';
-import axios from 'axios';
+import UploadFile from '../Upload/UploadFile';
 
 
 
@@ -70,15 +70,11 @@ const AddItemForm: React.FC = () => {
         <input type="text" name="category" value={formData.category} onChange={handleChange} required />
       </label>
 
-      <div className="App">
-            <h2>Add Image:</h2>
-            <input type="file" onChange={handleChange} />
-            <img src={imagePlaceHolder} />
-      </div>
-
-
-
-      <button type="submit">Add Item</button>
+      <UploadFile/>
+      <UploadFile/>
+      <UploadFile/>
+      <UploadFile/>
+        <button type="submit">Add Item</button>
     </form>
     </div>
   );
