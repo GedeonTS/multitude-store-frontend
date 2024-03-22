@@ -1,10 +1,12 @@
 .circle-image-upload {
-    width: 100px; /* Adjust size as needed */
+    width: 100px;
     height: 100px;
-    overflow: hidden; /* Prevent image overflow */
-    background-image: url('/placeholder.png'); /* Optional placeholder */
-    // background-size: ; /* Ensure image covers container */
-    background-position: center; /* Center image */
+    overflow: hidden; 
+    background-image: url('/placeholder.png'); 
+    background-position: center; 
+    background-size: cover;
+    width: 100%;
+  
     border: solid 1px grey;
     position: relative;
     display: flex;
@@ -14,17 +16,16 @@
   }
   
   .circle-image-upload input[type="file"] {
-    opacity: 0; /* Hide the default input appearance */
+    opacity: 0; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer; /* Indicate clickable area */
+    cursor: pointer;
   }
 
   .upload-action {
-    // position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
