@@ -51,7 +51,5 @@ const UploadFile: React.FC<UploadFileProps> = (
 
 
 export default UploadFile;
-function handleImageUpload(id: any, file: File) {
-  throw new Error('Function not implemented.');
-}
+
 
