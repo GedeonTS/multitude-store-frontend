@@ -21,7 +21,7 @@ function Navbar() {
           </p>
           <ul className="small-navbar-list">
             <li className="small-navbar-item">
-              <a href="#">Login</a>
+            <Link to="/login" className="login">Login</Link>
             </li>
             <li className="small-navbar-item">
               <a href="#">Register</a>
